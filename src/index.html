@@ -3,11 +3,58 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Analizador de texto prueba 1</title>
+  <title>Analizador de Texto</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Staatliches&display=swap"
+    rel="stylesheet">
 </head>
+
+<header>
+  <a><img id="logo-encabezado" src="images/open-book.png" /> </a>
+  <h1 class="encabezado">TextAnalyzer</h1>
+</header>
+
+<main>
+  <div class="titulo-contenedor">
+    <img id="logo-titulo" src="images/open-book.png" />
+    <p class="titulo-principal">ANALIZADOR DE TEXTO</p>
+    <p class="parrafo-principal">Para comenzar ingresa el texto en la parte de abajo</p>
+  </div>
+
+  <div class="lista-contenedor">
+    <ul>
+      <li data-testid="word-count">#PALABRAS:</li>
+      <li data-testid="character-count">#CARACTERES:</li>
+      <li data-testid="character-no-spaces-count">#SIN CARACTERES:</li>
+      <li data-testid="number-count">#NUMEROS:</li>
+      <li data-testid="number-sum">#SUMA NUMEROS:</li>
+      <li data-testid="word-lenght-average">#PROMEDIO LONGITUD:</li>
+    </ul>
+  </div>
+  <textarea id="caja-texto" name="texto" rows="10" cols="115">
+</textarea>
+  <div class="boton-contenedor">
+    <button class="boton-limpiar">
+      <a class="texto-boton">
+        <img id="logo-limpiar" src="images/clean.png" />
+        Limpiar texto
+      </a>
+    </button>
+  </div>
+  <p>
+    <footer>
+        Copyright @2023 Melany Ventura
+    </footer>
+  </p>
+  
+</main>
 
 <body>
   <script src="index.js" type="module"></script>
 </body>
+
 </html>
