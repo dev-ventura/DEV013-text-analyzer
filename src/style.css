@@ -25,7 +25,7 @@ main{
     flex-direction: column;
     align-items: center;
 }
-.titulo-contenedor{
+#titulo-contenedor{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,12 +41,12 @@ p{
     color: rgba(55, 64, 60, 1);
     height: 10px;
 }
-.parrafo-titulo{
+/*.parrafo-titulo{
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     color: rgba(13, 13, 13, 1);
     margin: 0.1em;
-}
+}*/
 ul{
     width: 925px;
     height: 105px;
@@ -58,14 +58,7 @@ ul{
     grid-template-columns: 300px 300px 300px;
     list-style: none;
 }
-.apartado-arriba{
-    background: rgba(194, 242, 224, 1);
-    border-radius: 10px;
-    line-height: 40px;
-    width: 280px;
-    padding-left: 15px;
-}
-.apartado-abajo{
+.apartado{
     background: rgba(194, 242, 224, 1);
     border-radius: 10px;
     line-height: 40px;
@@ -74,7 +67,7 @@ ul{
 }
 textarea[name="user-input"]{
     border-radius: 2em;
-    padding: 1em;
+    padding: 2em;
     margin: 1em;
 }
 #limpiarTexto{
@@ -86,11 +79,11 @@ textarea[name="user-input"]{
     height: 69px;
     align-items:center;
 }
-.boton-contenedor{
+#boton-contenedor{
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    margin-right: 475px;
+    margin-right: 450px;
 }
 #logo-limpiar{
     width: 22px;
@@ -98,7 +91,7 @@ textarea[name="user-input"]{
     margin-left: 5px;
     margin-right: 10px;
 }
-.texto-boton {
+#texto-boton {
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
     color: rgba(13, 13, 13, 1);
@@ -110,8 +103,8 @@ footer{
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding-left: 650px;
-    padding-right: 650px;
+    padding-left: 620px;
+    padding-right: 620px;
     font-family: 'Quicksand', sans-serif;
     
 }
