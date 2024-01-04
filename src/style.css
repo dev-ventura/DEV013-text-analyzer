@@ -15,7 +15,7 @@ header{
     margin-left: 20px;
     margin-right: 10px;
 }
-.encabezado{
+h1{
     font-family: 'Quicksand', sans-serif;    
     font-size: 20px;
     color: rgba(55, 64, 60, 1);
@@ -35,17 +35,17 @@ main{
     width: 60px;
     height: 60px;
 }
-.titulo-principal{
+p{
     font-family: 'Staatliches', sans-serif;
     font-size: 27px;
     color: rgba(55, 64, 60, 1);
     height: 10px;
 }
-.parrafo-principal{
+.parrafo-titulo{
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
     color: rgba(13, 13, 13, 1);
-    margin: 0;
+    margin: 0.1em;
 }
 ul{
     width: 925px;
@@ -58,19 +58,26 @@ ul{
     grid-template-columns: 300px 300px 300px;
     list-style: none;
 }
-li{
+.apartado-arriba{
     background: rgba(194, 242, 224, 1);
     border-radius: 10px;
     line-height: 40px;
     width: 280px;
     padding-left: 15px;
 }
-textarea{
-    border-radius: 25px;
-    padding: 1%;
-    margin: 10px;
+.apartado-abajo{
+    background: rgba(194, 242, 224, 1);
+    border-radius: 10px;
+    line-height: 40px;
+    width: 280px;
+    padding-left: 15px;
 }
-button{
+textarea[name="user-input"]{
+    border-radius: 2em;
+    padding: 1em;
+    margin: 1em;
+}
+#limpiarTexto{
     background: rgba(194, 242, 224, 1);
     border-radius: 25px;
     border: 0px;
@@ -98,12 +105,13 @@ button{
 }
 footer{
     background: rgba(194, 242, 224, 1);
-    background-size: 100% 97%;
-    height: 75px;
+    width: 200px;
+    height: 40px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    padding-left: 590px;
-    padding-right: 590px;
+    padding-left: 650px;
+    padding-right: 650px;
     font-family: 'Quicksand', sans-serif;
+    
 }

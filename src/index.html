@@ -15,42 +15,40 @@
 
 <header>
   <a><img id="logo-encabezado" src="images/open-book.png" /> </a>
-  <h1 class="encabezado">TextAnalyzer</h1>
+  <h1>TextAnalyzer</h1>
 </header>
 
 <main>
   <div class="titulo-contenedor">
     <img id="logo-titulo" src="images/open-book.png" />
-    <p class="titulo-principal">ANALIZADOR DE TEXTO</p>
-    <p class="parrafo-principal">Para comenzar ingresa el texto en la parte de abajo</p>
+    <p>ANALIZADOR DE TEXTO</p>
   </div>
 
   <div class="lista-contenedor">
     <ul>
-      <li data-testid="word-count">#PALABRAS:</li>
-      <li data-testid="character-count">#CARACTERES:</li>
-      <li data-testid="character-no-spaces-count">#SIN CARACTERES:</li>
-      <li data-testid="number-count">#NUMEROS:</li>
-      <li data-testid="number-sum">#SUMA NUMEROS:</li>
-      <li data-testid="word-lenght-average">#PROMEDIO LONGITUD:</li>
+      <li data-testid="word-count" class="apartado-arriba">#PALABRAS:</li>
+      <li data-testid="character-count" class="apartado-arriba">#CARACTERES:</li>
+      <li data-testid="character-no-spaces-count" class="apartado-arriba">#SIN CARACTERES:</li>
+      <li data-testid="number-count" class="apartado-abajo">#NUMEROS:</li>
+      <li data-testid="number-sum" class="apartado-abajo">#SUMA NUMEROS:</li>
+      <li data-testid="word-lenght-average" class="apartado-abajo">#PROMEDIO LONGITUD:</li>
     </ul>
   </div>
-  <textarea id="caja-texto" name="texto" rows="10" cols="115">
+  <textarea name="user-input" rows="10" cols="115">Ingresa el texto aqui...
 </textarea>
   <div class="boton-contenedor">
-    <button class="boton-limpiar">
+    <button id="limpiarTexto">
       <a class="texto-boton">
         <img id="logo-limpiar" src="images/clean.png" />
         Limpiar texto
       </a>
     </button>
-  </div>
-  <p>
-    <footer>
-        Copyright @2023 Melany Ventura
-    </footer>
-  </p>
-  
+  </div><hr/>
+
+  <footer>
+    <p><h5>Melany Ventura | dev.ventura</h5></p>
+  </footer>
+
 </main>
 
 <body>
