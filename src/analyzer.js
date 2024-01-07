@@ -16,38 +16,36 @@ const analyzer = {
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    const number = text.match(/\d+/g).length; // match recibe valores similares, y /\d busca digitos
-    return number;
+    const number = text.match(/\b\d+(\.\d+)?\b/g); // match recibe valores similares, y /\b delimita numeros con caracteres y \d busca digitos
+    if (number) {
+      return number.length; 
+    } else {
+      return 0;
+    }
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    let sum = 0;
-    let number = '';
-    for (let i = 0; i < text.length; i++) {
-      const character = text.charAt(i);
-      if (/\d/.test(character)) { // si el caracter es un numero
-        number += character;
-      } else {
-        if (number !== '') { 
-          sum += parseInt(number, 10); 
-          number = '';  // Reiniciar el número actual
-        }
+    const word = text.trim().split(' '); // trim elimina espacios de adelante y atras, split ayuda a dividir en otro array
+    let sumNumber = 0;
+
+    for (let i = 0; i < (word.length); i++) {
+      const num = parseFloat(word[i]);
+      if (!isNaN(num)) { // si el numero extraido de num es valido
+        sumNumber += num; // suma ese numero
       }
     }
-    if (number !== ''){
-      sum += parseInt(number, 10); //suma con el ultimo numero si no es vacio
-    }
-    return sum;
+    
+    return (sumNumber);
   },
   getAverageWordLength: (text) => {
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
     const words = text.split(/\s+/g); // dividiendo el texto por palabras
-    if(words.length === 0){
+    if (words.length === 0) {
       return 0;
     }
-    let totalLenght = words.reduce((acc, word) => acc + word.length, 0); // calculando la longitud total de las palabras
-    let mediaLenght = totalLenght / words.length; // calculando la longitud media de las palabras
-    return mediaLenght;
+    const totalLenght = words.reduce((acc, word) => acc + word.length, 0); // calculando la longitud total de las palabras
+    const mediaLenght = totalLenght / words.length; // calculando la longitud media de las palabras
+    return Number(mediaLenght.toFixed(2)); // retornando el promedio con dos decimales
   },
 };
 

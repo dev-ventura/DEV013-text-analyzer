@@ -9,30 +9,30 @@ const sumaNumeros = document.querySelector('li[data-testid="number-sum"]')
 const promedioLongitud = document.querySelector('li[data-testid="word-lenght-average"]')
 
 text.addEventListener("input", function () {
-//para mostrar cantidad de palabras
-const restWordCount = analyzer.getWordCount(text.value)
-contarPalabras.innerHTML = "#PALABRAS: " + restWordCount
-// para mostrar cantidad de caracteres
-const characterCount = analyzer.getCharacterCount(text.value)
-contarCaracteres.innerHTML = "#CARACTERES: " + characterCount
-//para mostrar cantidad sin espacios ni puntuaciones
-const noCharacter = analyzer.getCharacterCountExcludingSpaces(text.value)
-sinCaracteres.innerHTML = "#SIN CARACTERES: " + noCharacter
-// para mostrar cantidad de numeros
-const numberCount = analyzer.getNumberCount(text.value)
-contarNumeros.innerHTML = "#NUMEROS: " + numberCount
-//para mostrar suma de numeros 
-const numberSum = analyzer.getNumberSum(text.value)
-sumaNumeros.innerHTML = "#SUMA NUMEROS: " + numberSum
-// para mostrar el promedio longitud de las palabras
-const wordLenght = analyzer.getAverageWordLength(text.value)
-promedioLongitud.innerHTML = "#PROMEDIO LONGITUD: " + wordLenght
+  //para mostrar cantidad de palabras
+  const restWordCount = analyzer.getWordCount(text.value)
+  contarPalabras.innerHTML = "#PALABRAS: " + restWordCount
+  // para mostrar cantidad de caracteres
+  const characterCount = analyzer.getCharacterCount(text.value)
+  contarCaracteres.innerHTML = "#CARACTERES: " + characterCount
+  //para mostrar cantidad sin espacios ni puntuaciones
+  const noCharacter = analyzer.getCharacterCountExcludingSpaces(text.value)
+  sinCaracteres.innerHTML = "#SIN CARACTERES: " + noCharacter
+  // para mostrar cantidad de numeros
+  const numberCount = analyzer.getNumberCount(text.value)
+  contarNumeros.innerHTML = "#NUMEROS: " + numberCount
+  //para mostrar suma de numeros 
+  const numberSum = analyzer.getNumberSum(text.value)
+  sumaNumeros.innerHTML = "#SUMA NUMEROS: " + numberSum
+  // para mostrar el promedio longitud de las palabras
+  const wordLenght = analyzer.getAverageWordLength(text.value)
+  promedioLongitud.innerHTML = "#PROMEDIO LONGITUD: " + wordLenght
 })
 // limpiar texto
 const button = document.getElementById('limpiarTexto')
 const textBox = document.querySelector('[name="user-input"]')
 button.addEventListener("click", () => {
-    textBox.value = "";
+  textBox.value = "";
 })
 
 
