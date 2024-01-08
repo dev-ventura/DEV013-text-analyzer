@@ -26,12 +26,16 @@ const analyzer = {
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
     const word = text.trim().split(' '); // trim elimina espacios de adelante y atras, split ayuda a dividir en otro array
-    let sumNumber = 0;
+    let sumNumber = 0
 
     for (let i = 0; i < (word.length); i++) {
-      const num = parseFloat(word[i]);
-      if (!isNaN(num)) { // si el numero extraido de num es valido
-        sumNumber += num; // suma ese numero
+      let temporal = word[i]
+      if(temporal[temporal.length-1]==='.'){
+        temporal=temporal.substring(0, temporal.length - 1);
+      }
+      const num = parseFloat(temporal);
+      if (!isNaN(temporal)) { // si el numero extraido de num es valido
+        sumNumber += num // suma ese numero
       }
     }
     
