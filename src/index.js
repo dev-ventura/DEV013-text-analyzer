@@ -6,7 +6,7 @@ const contarCaracteres = document.querySelector('li[data-testid="character-count
 const sinCaracteres = document.querySelector('li[data-testid="character-no-spaces-count"]')
 const contarNumeros = document.querySelector('li[data-testid="number-count"]')
 const sumaNumeros = document.querySelector('li[data-testid="number-sum"]')
-const promedioLongitud = document.querySelector('li[data-testid="word-lenght-average"]')
+const promedioLongitud = document.querySelector('li[data-testid="word-length-average"]')
 
 text.addEventListener("input", function () {
   //para mostrar cantidad de palabras
@@ -29,7 +29,7 @@ text.addEventListener("input", function () {
   promedioLongitud.innerHTML = "#PROMEDIO LONGITUD: " + wordLenght
 })
 // limpiar texto
-const button = document.getElementById('limpiarTexto')
+const button = document.getElementById('reset-button')
 const textBox = document.querySelector('[name="user-input"]')
 button.addEventListener("click", () => {
   textBox.value = "";

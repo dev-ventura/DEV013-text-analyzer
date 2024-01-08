@@ -70,7 +70,7 @@ textarea[name="user-input"]{
     padding: 2em;
     margin: 1em;
 }
-#limpiarTexto{
+#reset-button{
     background: rgba(194, 242, 224, 1);
     border-radius: 25px;
     border: 0px;
