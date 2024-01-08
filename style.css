@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+}
+header{
+    background: rgba(194, 242, 224, 1);
+    background-size: 100% 97%;
+    height: 75px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+#logo-encabezado{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+h1{
+    font-family: 'Quicksand', sans-serif;    
+    font-size: 20px;
+    color: rgba(55, 64, 60, 1);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#titulo-contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+#logo-titulo{
+    width: 60px;
+    height: 60px;
+}
+p{
+    font-family: 'Staatliches', sans-serif;
+    font-size: 27px;
+    color: rgba(55, 64, 60, 1);
+    height: 10px;
+}
+/*.parrafo-titulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: rgba(13, 13, 13, 1);
+    margin: 0.1em;
+}*/
+ul{
+    width: 925px;
+    height: 105px;
+    align-items: center;
+    border-radius: 25px;
+    font-family: 'Staatliches', sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    list-style: none;
+}
+.apartado{
+    background: rgba(194, 242, 224, 1);
+    border-radius: 10px;
+    line-height: 40px;
+    width: 280px;
+    padding-left: 15px;
+}
+textarea[name="user-input"]{
+    border-radius: 2em;
+    padding: 2em;
+    margin: 1em;
+}
+#reset-button{
+    background: rgba(194, 242, 224, 1);
+    border-radius: 25px;
+    border: 0px;
+    line-height: 10px;
+    width: 216px;
+    height: 69px;
+    align-items:center;
+}
+#boton-contenedor{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 450px;
+}
+#logo-limpiar{
+    width: 22px;
+    height: 22px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+#texto-boton {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: rgba(13, 13, 13, 1);
+}
+footer{
+    background: rgba(194, 242, 224, 1);
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-left: 620px;
+    padding-right: 620px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
