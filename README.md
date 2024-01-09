@@ -6,7 +6,7 @@ pueda analizar un texto en el navegador mostrando una serie de indicadores y
 métricas específicas sobre caracteres, letras, números, etc. Que hayan sido
 enviadas como _input_ por ella.
 
-![Text analyzer demo](https://github-production-user-asset-6210df.s3.amazonaws.com/12631491/240650556-988dcd6f-bc46-473b-894c-888a66c9fe2d.gif "Text analyzer demo")
+![Text analyzer demo](https://github.com/dev-ventura/DEV013-text-analyzer/blob/main/src/images/analyzertext.gif "Text analyzer demo")
 
 Comenzamos este proyecto haciendo un _fork_ y _clonando_ el 
 repositorio, que contiene un _boilerplate_ con tests (pruebas). Un _boilerplate_
